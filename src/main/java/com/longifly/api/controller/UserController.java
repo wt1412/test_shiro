@@ -58,6 +58,8 @@ public class UserController {
     public Map<String, Object> list(@ApiParam(name = "pageNum", value = "页码") @RequestParam int pageNum,
         @ApiParam(name = "pageSize", value = "页长") @RequestParam int pageSize) {
         //
+        System.out.println("*********************");
+        //
         Map<String, Object> result = new HashMap<String, Object>();
         //
         result.put("items", userService.findAll((pageNum <= 0 ? 0 : pageNum - 1) * pageSize, pageSize));
