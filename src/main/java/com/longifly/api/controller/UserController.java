@@ -58,7 +58,7 @@ public class UserController {
     public Map<String, Object> list(@ApiParam(name = "pageNum", value = "页码") @RequestParam int pageNum,
         @ApiParam(name = "pageSize", value = "页长") @RequestParam int pageSize) {
         //
-        System.out.println("===============123456");
+        System.out.println("===============");
         //
         Map<String, Object> result = new HashMap<String, Object>();
         //
